@@ -2,7 +2,7 @@ class Solution:
     def findKthPositive(self, arr: List[int], k: int) -> int:
         missing_count = 0
         expected = 1
-    
+        
         for num in arr:
             while expected < num:
                 missing_count += 1
